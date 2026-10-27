@@ -43,3 +43,16 @@ Este repositorio contiene el desarrollo de un simulador 3D interactivo del siste
     - **Vista Nave / Piloto:** Coloca la cámara exactamente en la posición de la nave con una ligera elevación y aplica la función (`camera.lookAt`) para simular la vista frontal del piloto recorriendo el sistema solar.
 - **Resultado:**
   ![Vista nave](vistaNave.png)
+
+---
+
+### Fuentes consultadas
+
+Para añadir los botones al panel: https://elblogdelprogramador.com/posts/como-crear-botones-web-html-css/
+
+Recordar los listener para saber cuando pulsamos los botones: https://developer.mozilla.org/es/docs/Web/API/EventTarget/addEventListener
+
+Comprender como crear la órbita elíptica: https://threejs.org/docs/#EllipseCurve
+
+En general no hacía falta usar la inteligencia artificial ya que todo estaba explicado paso a paso en el github.
+
