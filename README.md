@@ -20,7 +20,7 @@ Este repositorio contiene el desarrollo de un simulador 3D interactivo del siste
   - Las órbitas de los cuerpos celestes se calcularon mediante curvas paramétricas elípticas (`THREE.EllipseCurve`) utilizando factores de excentricidad ajustables ($f_1$ y $f_2$) mediante funciones trigonométricas de seno y coseno.
   - Se diseñó la función modularizada `Planeta` y la función unificada `Esfera`, soportando materiales fotorealistas de tipo `MeshPhongMaterial` compatibles con texturas externas o colores planos de respaldo.
 - **Resultado:**
-  *(Inserta aquí una captura de pantalla del sistema solar general)*
+  ![Sistema Solar](SistemaPlanetario.png)
 
 ---
 
@@ -30,7 +30,7 @@ Este repositorio contiene el desarrollo de un simulador 3D interactivo del siste
   - Se programó la función `Luna`, aprovechando el grafo de escena de Three.js para hacer que cada satélite sea hijo directo del planeta correspondiente (`planeta.add(luna)`), heredando así su movimiento de traslación de forma automática.
   - Se desarrolló un panel lateral flotante con botones interactivos vinculados a un diccionario asociativo (`planetasDiccionario`), permitiendo activar y sumar planetas a la escena de manera progresiva sin eliminar los anteriores.
 - **Resultado:**
-  *(Inserta aquí una captura de pantalla seleccionando un planeta con sus lunas)*
+  ![Planeta con su/s lunas](LunaPlaneta.png)
 
 ---
 
@@ -42,4 +42,4 @@ Este repositorio contiene el desarrollo de un simulador 3D interactivo del siste
     - **Vista General:** Eleva la cámara a una posición panorámica lejana ($z = 70$) centrada en el origen.
     - **Vista Nave / Piloto:** Coloca la cámara exactamente en la posición de la nave con una ligera elevación y aplica la función (`camera.lookAt`) para simular la vista frontal del piloto recorriendo el sistema solar.
 - **Resultado:**
-  *(Inserta aquí una captura de pantalla en la vista de la nave)*
+  ![Vista nave](vistaNave.png)
