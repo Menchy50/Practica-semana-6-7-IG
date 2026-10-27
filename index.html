@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title>Práctica S7 IG</title>
+    <meta charset="UTF-8" />
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="app"></div>
+    <!--Panel con los distintos planetas-->
+    <div id="panel-control" style="position: absolute; top: 15px; left: 15px; z-index: 10; background: rgba(0, 0, 0, 0.85); padding: 15px; border-radius: 8px; color: white; font-family: sans-serif; display: flex; flex-direction: column; gap: 6px; max-height: 90vh; overflow-y: auto;">
+      <h3 style="margin: 0 0 5px 0; font-size: 16px; text-align: center;">Sistema Solar</h3>
+
+      <button class="btn-planeta" data-target="Mercurio">Mercurio</button>
+      <button class="btn-planeta" data-target="Venus">Venus</button>
+      <button class="btn-planeta" data-target="Tierra">Tierra</button>
+      <button class="btn-planeta" data-target="Marte">Marte</button>
+      <button class="btn-planeta" data-target="Jupiter">Júpiter</button>
+      <button class="btn-planeta" data-target="Saturno">Saturno</button>
+      <button class="btn-planeta" data-target="Urano">Urano</button>
+      <button class="btn-planeta" data-target="Neptuno">Neptuno</button>
+      <button id="btn-general" style="background: #2b7a78; color: white; border: none; padding: 6px; border-radius: 4px; cursor: pointer;">Vista General</button>
+    <button id="btn-nave" style="background: #e67e22; color: white; border: none; padding: 6px; border-radius: 4px; cursor: pointer;">Vista Nave</button>
+
+    </div>
+
+    <!--S7-->
+    <script src="script_sistemaPlanetario.js" type="module"></script>
+    <!--<script src="script_11_luces.js" type="module"></script>-->
+    <!--script src="script_12_lucesysombras.js" type="module"></script-->
+    <!--script src="script_13_texturabasica.js" type="module"></script-->
+    <!--script src="script_15_texplaneta.js" type="module"></script-->
+    <!--script src="script_16_esferasimple.js" type="module"></script-->
+  </body>
+</html>
